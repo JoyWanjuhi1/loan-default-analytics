@@ -2,7 +2,7 @@
 
 A full-stack, cloud-deployed credit risk data platform designed to assist banking institutions in predicting consumer loan defaults. This multi-page web platform combines an interactive executive control center with a real-time predictive underwriting engine driven by an optimized Random Forest machine learning pipeline.
 
-🚀 **Live Interactive Application:** [https://loan-default-analytics-kbzh9gnaxgyswdhfjnsrda.streamlit.app/]
+✨ **Experience the interactive app live on the web here:** [Launch Credit Risk Dashboard 🏦](https://loan-default-analytics-kbzh9gnaxgyswdhfjnsrda.streamlit.app/)
 ---
 
 ## 🎯 Business Problem & Project Goal
