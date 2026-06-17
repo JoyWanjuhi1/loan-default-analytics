@@ -54,3 +54,48 @@ loan-default-analytics/
 ├── train_model.py             # Feature engineering, split balancing, and model generation script
 ├── requirements.txt           # Verified production library dependencies
 └── .gitignore                 # Active version control structural filter
+
+```
+# Machine Learning Implementation & Performance
+To navigate the severe 3.33% class imbalance without compromising the bank's operational safety, the background predictive pipeline was built using a Random Forest Classifier configured with automated balanced class weightings (class_weight='balanced').
+
+Model Evaluation Matrix
+Overall Classification Accuracy: 96%
+
+Class 1 (Defaulter) Recall: 52% (Successfully flags over half of true defaults out-of-the-box)
+
+Class 1 (Defaulter) Precision: 41%
+
+The model heavily isolates risk thresholds based on structural splits across the account leverage features.
+
+#Local Installation & Setup
+To run this platform locally on your machine, clone the repository and execute the environment configuration block below
+
+```text
+# Clone the repository
+git clone [https://github.com/YOUR_GITHUB_USERNAME/loan-default-analytics.git](https://github.com/YOUR_GITHUB_USERNAME/loan-default-analytics.git)
+cd loan-default-analytics
+
+# Set up and activate a localized virtual environment
+python -m venv venv
+# On Windows:
+.\venv\Scripts\activate
+# On Mac/Linux:
+source venv/bin/activate
+
+# Install verified operational dependencies
+pip install -r requirements.txt
+
+# Launch the interactive server locally
+streamlit run app.py
+---
+
+### Sync the Final Project to GitHub
+
+Run these final commands in your VS Code terminal to update your README file online:
+
+```bash
+git add README.md
+git commit -m "Docs: Embed live streamlit deployment url into repository readme"
+git push origin main
+
